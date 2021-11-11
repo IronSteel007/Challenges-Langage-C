@@ -1,28 +1,32 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 
 int main()
-{
-    float celsius, fahrenheit;
+ {
+	
+	float fahrenheit, celsius;
+	
+	printf("ce programme de convertion du Fahrenheit en Celsius :) \n\n");
+	
+	printf("la valeur en Fahrenheit : ");
+	scanf("%f", &fahrenheit);
+	
+	   /* convertir Fahrenheit en Celsius */
+	
+	celsius = (fahrenheit - 32) / 1.8;
 
-    printf("Entrez la température en degrés Fahrenheit: ");
-    scanf("%f", &fahrenheit);
+	printf("%g fahrenheit = %g celsius \n", fahrenheit, celsius);
 
-    /* convertir Fahrenheit en Celsius */
-    celsius = (fahrenheit - 32) * 5 / 9;
-
-    printf("%.2f Fahrenheit = %.2f Celsius", fahrenheit, celsius);
-     
-     if (celsius < 0)
-    printf("  c'est tres froid");
-     if (celsius > 0 && celsius<15)
-    printf("c'est froid ");
-     if (celsius > 15  && celsius <30)
-    printf(" c'est chaud ");
-    if (celsius > 30)
-    printf(" c'est tres chaud");
-
-    return 0;
+	if (celsius < 0) {	
+		printf("Tres froid");
+	} else if (celsius < 15) {
+		printf("froid");
+	} else if (celsius < 30) {
+		printf("chaud");
+	} else {
+		printf("Tres chaud");
+	}
+	
+	return 0;
 }
-
-
-

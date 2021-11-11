@@ -1,16 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 int main()
-{
-//declarer des variable 
-    float  metre,mile;
-
-    printf("Entrez la longueur en metre: ");
-    scanf("%f", &metre);
-
-    //Convertir mètre en Mile
-    
-    mile =metre*1000*1.609;
-
-    printf("Longueur en mile = %.2f m \n", mile);
-    return 0;
+ {
+	float Metre, Km, Mile;
+	
+	printf("ce programme Conversion du Mile au Km :) \n");
+	
+	printf("Enter la valeur en Kilo Metre : ");
+	scanf("%f", &Km);
+	
+	//Convertir  km en mètre et Mile
+	
+	Metre = Km * 1000;
+	Mile = Km / 1.609;
+	
+	printf("%g Kilo Metre = %g en Metre et %g en Mile", Km, Metre, Mile);
+	
+	return 0;
 }
-
