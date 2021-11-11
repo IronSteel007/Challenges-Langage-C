@@ -13,7 +13,7 @@ int main() {
 	
 	printf("my first programme in language C :) \n");
 	
-	printf("Please enter the first name : \n ");
+	printf("Please enter the first name : ");
 	scanf("%s", firstname);
 	
 	printf("Please enter the last name : ");
@@ -28,7 +28,7 @@ int main() {
 	printf("Please enter the phone number : ");
 	scanf("%s", phoneNumber);
 	
-	//affichage des informations
-	printf("Hi Mr %s %s your age is %d, your gender is : %s and your phone number is : %s", firstname, lastname, age, gender, phoneNumber);
+	//les informations
+	printf("Hello Mr %s %s your are %d years old , your gender is  %s and your phone number is %s", firstname, lastname, age, gender, phoneNumber);
 	return 0;
 }

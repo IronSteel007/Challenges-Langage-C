@@ -12,7 +12,7 @@ int main()
 	printf("la valeur en Fahrenheit : ");
 	scanf("%f", &fahrenheit);
 	
-	   /* convertir Fahrenheit en Celsius */
+	   //la convertion Fahrenheit en Celsius 
 	
 	celsius = (fahrenheit - 32) / 1.8;
 

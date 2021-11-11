@@ -3,19 +3,14 @@
 
 int main()
  {
-	float Metre, Km, Mile;
-	
-	printf("ce programme Conversion du Mile au Km :) \n");
-	
-	printf("Enter la valeur en Kilo Metre : ");
-	scanf("%f", &Km);
-	
-	//Convertir  km en mètre et Mile
-	
-	Metre = Km * 1000;
-	Mile = Km / 1.609;
-	
-	printf("%g Kilo Metre = %g en Metre et %g en Mile", Km, Metre, Mile);
+		// Conversion du Metre au Km
+ 	float mile,km,metre;
+ 	printf("la distance en metre \n");
+ 	scanf ("%g",&metre);
+ 	km=metre/1000;
+ 	mile = km/1.609;
+ 	printf("%g metre = %g km = %g mile\n ",metre,km,mile);
+ 	
 	
 	return 0;
 }
