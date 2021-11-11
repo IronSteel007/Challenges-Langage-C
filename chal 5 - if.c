@@ -19,14 +19,18 @@ int main()
 	printf("%g fahrenheit = %g celsius \n", fahrenheit, celsius);
 
 	if (celsius < 0) {	
-		printf("Tres froid");
-	} else if (celsius < 15) {
-		printf("froid");
-	} else if (celsius < 30) {
-		printf("chaud");
-	} else {
-		printf("Tres chaud");
+		printf("it's Very cold");
 	}
+	else if (celsius < 15) {
+		printf("it's cold");
+	} 
+	else if (celsius < 30) {
+		printf("it's hot");
+	} 
+	else {
+		printf("it's Very hot");
+	}
+	
 	
 	return 0;
 }
