@@ -12,9 +12,9 @@ int main()
 	
 	
 	Km = Mile * 1.609;
-	Metre = Km * 1000;
+	Km = Metre * 1000;
 	
-	printf("%g  Mile  = %g en Metre et %g en Kilo Metre", Mile, Metre, Km);
-	
+	printf("%g  Mile  = %g en KiloMetre et %g en Metre", Mile,Km,Metre);
+	 
 	return 0;
 }
