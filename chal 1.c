@@ -11,7 +11,7 @@ int main() {
 	char gender[10];
 	char phoneNumber[15];
 	
-	printf("my first programme in language C :) \n");
+	printf("my first programme in language C : \n");
 	
 	printf("Please enter the first name : ");
 	scanf("%s", firstname);
