@@ -8,7 +8,7 @@ int main()
   				
 /************************************************************************************************
   			Soit f une fonction polynôme de degré 2 de la forme :
-			f(x)=ax²+bx+c où a , b et c sont trois réels avec a # 0.
+			f(x)=ax²+bx+c où a , b et c sont trois entiers avec a # 0.
 			Le nombre réel D égal à b²-4ac est appelé le discriminant de f.
 			
 ************************************************************************************************/
@@ -21,7 +21,7 @@ int main()
  printf("Entrer la valeurs pour a, b, et c : \n");
  scanf("%d %d %d", &A, &B, &C);
 
- /* Calcul du discriminant b^2-4ac */
+ 								/* Calcul du discriminant b^2-4ac */
  D = pow(B,2) - 4.0*A*C;
 
  										/* Distinction de tout	les cas*/
@@ -32,7 +32,7 @@ int main()
     
   else if (A==0 && B==0) 			 /* Contradiction: c # 0 et c = 0 */ 
     
-    printf("Cette equation ne possede pas de solutions.\n"); 
+    printf("Cette equation ne possede pas de solutions dans les nobre relles .\n"); 
     
   else if (A==0) /* bx + c = 0 */  
      { 
@@ -43,7 +43,7 @@ int main()
 										f ne peut pas s'écrire sous forme factorisée.*/
 
  {
-printf("Les solutions complexes de cette equation sont les suivantes :\n"); 
+printf("Les solutions de cette equation sont les suivantes :\n"); 
  
  } 
   else if (D==0) /* b^2-4ac = 0   alors l'équation f(x)=0 admet une unique solution:x0=-b/2a.
@@ -59,6 +59,7 @@ printf("Les solutions complexes de cette equation sont les suivantes :\n");
        printf("Les solutions reelles de cette equation sont :\n"); 
        printf(" x1 = %g\n", (float)(-B+sqrt(D))/(2*A)); 
        printf(" x2 = %g\n", (float)(-B-sqrt(D))/(2*A)); 
+       printf(" f(x) = %d(x-%g)(x-%g)\n", A,(float)(-B+sqrt(D))/(2*A),(float)(-B-sqrt(D))/(2*A));
      } 
    return 0; 
 }
