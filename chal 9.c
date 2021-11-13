@@ -1,18 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
 
 int main()
  {
 	
-	float rayon;
+	int Ax, Ay, Bx, By;
+	float AB;
 	
-	printf("ce programme calcule le Circonference d\'un cercle : \n");
-	printf("Entrer le valeur de rayon : ");
-	scanf("%f", &rayon);
+	printf("ce programme calcule la distance entre deux poits A et B : \n \n");
 	
-	printf("Circonference du cercle avec le rayon : %f = %f", rayon, (float) 2 * M_PI * rayon);
+	printf("Entrer la valeur de Ax : ");
+	scanf("%d", &Ax);
+	printf("Entrer la valeur de Ay : ");
+	scanf("%d", &Ay);
+	
+	printf("Entrer la valeur de Bx : ");
+	scanf("%d", &Bx);
+	printf("Entrer la valeur de By : ");
+	scanf("%d", &By);
+	
+	AB = sqrt( pow((Bx-Ax), 2) + pow((By-Ay), 2));
+	printf("la distance est : %g", AB);
 	
 	return 0;
 }
