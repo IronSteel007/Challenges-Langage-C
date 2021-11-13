@@ -7,7 +7,7 @@ int main()
 	
 	float fahrenheit, celsius;
 	
-	printf("ce programme de convertion du Fahrenheit en Celsius :) \n\n");
+	printf("ce programme de convertion du Fahrenheit en Celsius : \n\n");
 	
 	printf("la valeur en Fahrenheit : ");
 	scanf("%f", &fahrenheit);

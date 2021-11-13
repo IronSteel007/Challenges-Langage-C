@@ -7,7 +7,7 @@ int main()
 	
 	float rayon;
 	
-	printf("ce programme calcule le Circonference d\'un cercle :) \n");
+	printf("ce programme calcule le Circonference d\'un cercle : \n");
 	printf("Entrer le valeur de rayon : ");
 	scanf("%f", &rayon);
 	

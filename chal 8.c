@@ -7,7 +7,7 @@ int main()
 	
 	float nombre1, nombre2, nombre3, nombre4;
 	
-	printf("ce programme calcule la Moyenne et la somme de 4 nombres :) \n\n");
+	printf("ce programme calcule la Moyenne et la somme de 4 nombres : \n\n");
 	
 	printf("Entrer la valeur de Nombre 1 : ");
 	scanf("%f", &nombre1);

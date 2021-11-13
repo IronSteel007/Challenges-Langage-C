@@ -6,7 +6,7 @@ int main()
  {
 	int a, b;
 	
-	printf("ce programme Calcule et affichage résultat en format décimal :) \n \n \n");
+	printf("ce programme Calcule et affichage résultat en format décimal : \n \n \n");
 	
 	printf("Entrer la valeur de a : ");
 	scanf("%d", &a);
