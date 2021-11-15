@@ -4,14 +4,14 @@
 
 int main() 
 { 
- long Annee,choix ;
+ unsigned long Annee,choix ;
  
   
  printf("Entrer une Annee  : ");
  scanf("%ld", &Annee);
 
 
-	printf("Entrer votre choix \n");
+	printf("Entrer votre choix : \n");
 	printf("1. Mois \n");
 	printf("2. Jours \n");
 	printf("3. Heures \n");
@@ -19,8 +19,12 @@ int main()
 	printf("5. Secondes \n");
 	scanf("%ld", &choix);
 
+	if (Annee <= 0 ) {
+		printf("Impossible");
+	}
 
-  if (Annee % 4 == 0) {	
+
+  else if (Annee % 4 == 0 ) {	
   
 		  switch (choix) {
 				case 1 :
@@ -47,7 +51,6 @@ int main()
 
 
 }
-	
 	
 	 
   else
