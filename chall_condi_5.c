@@ -32,7 +32,7 @@ int main()
     
   else if (A==0 && B==0) 			 /* Contradiction: c # 0 et c = 0 */ 
     
-    printf("Cette equation ne possede pas de solutions dans les nobre relles .\n"); 
+    printf("Cette equation ne possede pas de solutions dans les nobre relles mais dans les nombres complexes il y a une  .\n"); 
     
   else if (A==0) /* bx + c = 0 */  
      { 
@@ -56,7 +56,7 @@ printf("Les solutions de cette equation sont les suivantes :\n");
    									x1=-b-squrt(D)/2a et x2=-b+sqrt(D)/2a.
 							  		 La forme factorisée de f est f(x)=a(x-x1)(x-x2).*/
      {  
-       printf("Les solutions reelles de cette equation sont :\n"); 
+       printf("Les solutions de cette equation sont :\n"); 
        printf(" x1 = %g\n", (float)(-B+sqrt(D))/(2*A)); 
        printf(" x2 = %g\n", (float)(-B-sqrt(D))/(2*A)); 
        printf(" f(x) = %d(x-%g)(x-%g)\n", A,(float)(-B+sqrt(D))/(2*A),(float)(-B-sqrt(D))/(2*A));
