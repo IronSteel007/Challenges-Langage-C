@@ -11,12 +11,12 @@ int main() {
 	
 	if (nombre < 0)
 	{
-			printf("le nombre est negatif . \n");
+			printf("le nombre %ld est negatif . \n",&nombre);
 	}
 
 	else if (nombre > 0 )
 	{
-			printf("le nombre est positif . \n");
+			printf("le nombre %ld est positif . \n",&nombre);
 	}
 
 	else
